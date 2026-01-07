@@ -20,13 +20,19 @@ My past work spans **multi-agent reinforcement learning with LLM collaboration**
 
 ## 🧠 Research Projects
 
-### 🔹 LLM Collaboration with Multi-Agent Reinforcement Learning
-**Keywords:** MARL · PPO / MAPPO · Self-Play · LLM-assisted Coordination  
+Keywords: Dec-POMDP · CTDE-inspired training · MAGRPO · Multi-turn LLM collaboration
 
-- Studied how large language models can act as **high-level coordination and communication modules** for MARL agents  
-- Designed environments where agents learn through **self-play and partial observability**
-- Analyzed failure modes of independent Q-learning and policy gradient methods in strategic games
-- Target venues: **AAAI / AAMAS / NeurIPS Workshops**
+Formalized multi-LLM collaboration as a cooperative Dec-POMDP: each agent observes partial, prompt-based information and outputs natural-language actions; the system/reward model provides joint rewards over multi-turn interactions 
+
+Introduced MAGRPO, extending GRPO to multi-agent, multi-turn settings by sampling groups of joint rollouts and using group-relative Monte-Carlo advantages to coordinate agents without training a large centralized value model 
+
+Evaluated on two collaboration domains:
+
+Writing: 2 Qwen agents learn complementary roles (concise TLDR + detailed summary; background + method/experiments for arXiv-style expansion), improving structure/style coherence vs. prompt-level baselines 
+
+Coding: 2 Qwen coder agents generate a helper + main function; rewards include structure/syntax/tests and an explicit cooperation bonus when main correctly uses helper; introduced CoopHumanEval to reduce non-cooperative noise in HumanEval 
+
+Empirically, MAGRPO outperforms single-model and prompt-only multi-agent baselines in overall return and cooperation metrics, especially in multi-turn coding with external feedback signals
 
 ---
 
@@ -36,7 +42,7 @@ My past work spans **multi-agent reinforcement learning with LLM collaboration**
 - Developed techniques for detecting **floating-point inconsistencies and corner-case bugs**
 - Focused on numerical instability, path explosion, and solver scalability
 - Contributed to modeling, testing, and evaluation components of the framework
-- This project strengthened my interest in **robust and reliable learning systems**
+- This project strengthened my interest in **robust and reliable systems**
 
 ---
 
@@ -73,8 +79,8 @@ My past work spans **multi-agent reinforcement learning with LLM collaboration**
 
 ## 🎓 Background
 
-- **M.S. in Artificial Intelligence**, Northeastern University (Roux Institute)
-- **B.S. in Mathematics**, University of California, San Diego (UCSD)
+- **M.S. in Artificial Intelligence**, Northeastern University 
+- **B.S. in Mathematics**, University of California, San Diego
 
 ---
 

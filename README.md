@@ -19,7 +19,7 @@ My past work spans **multi-agent reinforcement learning with LLM collaboration**
 ---
 
 ## 🧠 Research Projects
-
+### 🔹 LLM Collaboration With Multi-Agent Reinforcement Learning
 Keywords: Dec-POMDP · CTDE-inspired training · MAGRPO · Multi-turn LLM collaboration
 
 Formalized multi-LLM collaboration as a cooperative Dec-POMDP: each agent observes partial, prompt-based information and outputs natural-language actions; the system/reward model provides joint rewards over multi-turn interactions 
